@@ -2,9 +2,7 @@ FROM python:3.8-bullseye
 
 WORKDIR /app
 
-#RUN pip install django psycopg2
-RUN pip install django
-RUN pip install psycopg2
+RUN pip install --no-cache-dir django psycopg2
 
 ENV PYTHONUNBUFFERED=1
 
